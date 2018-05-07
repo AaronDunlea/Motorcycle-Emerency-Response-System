@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0094c1">
+
+    <TextView
+        android:id="@+id/possibleCrashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/possible_crash_detected"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="202dp"
+        android:layout_height="179dp"
+        app:srcCompat="@mipmap/possible_crash_warning"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+
+</android.support.constraint.ConstraintLayout>

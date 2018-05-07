@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "366686514626",
+    "firebase_url": "https://mers-91090.firebaseio.com",
+    "project_id": "mers-91090",
+    "storage_bucket": "mers-91090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366686514626:android:2c7717b4185ff5f7",
+        "android_client_info": {
+          "package_name": "com.example.aarondunlea.mers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366686514626-e9ggk70g58pamp0vng2spoioj7prb642.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aarondunlea.mers",
+            "certificate_hash": "5e97b495e37145df3d5a9ef1b8f52e938d55e595"
+          }
+        },
+        {
+          "client_id": "366686514626-e4tbikn9ntapnurd8613aafep44o6krl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1PHWaTS6wcA1DWgDzWj8syn6RElxkc9c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366686514626-e4tbikn9ntapnurd8613aafep44o6krl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

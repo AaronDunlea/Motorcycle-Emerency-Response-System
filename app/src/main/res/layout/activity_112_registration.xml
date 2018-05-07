@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/emergencySMSText1"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="@string/emergencySMSInfo1"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ESInfo2"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:text="@string/emergenceSMSInfo2"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/emergencySMSRegTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emergency_sms_registration"
+        android:textSize="22dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/button_emergencySMS_Proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="428dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ESInfo3"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:text="@string/emergencySMSinfo3"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <Button
+        android:id="@+id/button_emergencySMS_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="428dp" />
+</android.support.constraint.ConstraintLayout>

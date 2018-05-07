@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MERS</string>
+
+    <string name="google_maps_API_key">AIzaSyBIXBgmzTIfAGF_RwRuO4SF_YIhkwGRtNE</string>
+    <string name="xText"></string>
+    <string name="possible_crash_detected">Possible Crash Detected</string>
+    <string name="emergencySMSInfo1">In order for you to get the most out of this application it is recommended that you sign up to the Irish 112 emergency SMS service. This will register your phone number with their online database allowing the application to contact emergency services in case of an accident. This will be done as a last resort in case no other emergency contacts can be reached. this message will contain your last known location aswell as some personal details</string>
+    <string name="emergenceSMSInfo2">If you agree to sign up please select "Proceed" this will simply send a text message containing the word "Register" to 112. </string>
+    <string name="emergencySMSinfo3">If do not wish for this feature to be available to you select Skip. you can always change this at a later time in settings</string>
+    <string name="proceed">Proceed</string>
+    <string name="emergency_sms_registration">Emergency SMS Registration</string>
+    <string name="skip">Skip</string>
+
+
+    <string-array name="bloodtypes">
+
+        <item>O-</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>AB-</item>
+        <item>AB+</item>
+        <item>Not Available</item>
+
+
+
+
+    </string-array>
+</resources>
