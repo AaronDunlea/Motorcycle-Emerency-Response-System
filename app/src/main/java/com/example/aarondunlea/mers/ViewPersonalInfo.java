@@ -134,7 +134,7 @@ public class ViewPersonalInfo extends AppCompatActivity {
         Users userInfo = new Users(email, newPIFname,newPISurname,newPIAddress,piDateOfBirth,newPIBloodType);
 
         databasePersonalInfo.setValue(userInfo);
-
+        Toast.makeText(this, "Information Updated", Toast.LENGTH_SHORT).show();
 
     }
 

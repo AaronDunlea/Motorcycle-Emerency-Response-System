@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -112,6 +113,7 @@ public class ViewEmergencyContactActivity  extends AppCompatActivity {
         EmergencyContact emergencyContactInfo = new EmergencyContact(email, newFname, newSurname, newPhone, newRelationship);
 
         databaseEmergencyContact.setValue(emergencyContactInfo);
+        Toast.makeText(this, "Information Updated", Toast.LENGTH_SHORT).show();
     }
 
     public void onClick(View v) {

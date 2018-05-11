@@ -262,7 +262,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             //  yText.setText("Shake Reading = " + shake);
             if (shake > 60) {
                 sensorDelay = true;
-                Toast.makeText(this, "Shake = " + shake, Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "Shake = " + shake, Toast.LENGTH_SHORT).show();
                 possibleCrash(shake);
                 shake = 0.00f;
             }
@@ -280,7 +280,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
 
         counter = 30;
-        Toast.makeText(this, "Possible crash - checking location1", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Possible crash - Checking location 1", Toast.LENGTH_SHORT).show();
         crashLocation = getDeviceLocation();
         lat1 = crashLocation.getLatitude();
         lng1 = crashLocation.getLongitude();
@@ -324,8 +324,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     Toast.makeText(MapActivity.this, "Comparing locations", Toast.LENGTH_SHORT).show();
                     // cancelDistance = averageSpeed *
 
-                    if (distanceBetweenReadings[0] < 1.0) {
-                        Toast.makeText(MapActivity.this, "activating crash mode difference = " + distanceBetweenReadings[0], Toast.LENGTH_SHORT).show();
+                    if (distanceBetweenReadings[0] < 30.0) {
+                        Toast.makeText(MapActivity.this, "Acivating crash mode difference = " + distanceBetweenReadings[0], Toast.LENGTH_SHORT).show();
                         crashMode();
                         shake = 0.00f;
                         counter = 30;
@@ -399,7 +399,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         }.start();
 
 
-        final AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
+        AlertDialog.Builder a_builder = new AlertDialog.Builder(MapActivity.this);
         a_builder.setMessage("Are you OK?\nIf no response is received in 30 seconds an emergency SMS will be sent out").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -407,7 +407,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 String status = "Cancelled - User Selected OK";
                 updatePossibleCrash(status, shake);
                 cdt2.cancel();
-                  r.stop();
+                r.stop();
                 counter = 30;
                 shake = 0.00f;
                 sensorDelay = false;
@@ -435,14 +435,22 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         final AlertDialog alert = a_builder.create();
         alert.setTitle("Possible Crash Detected");
-        alert.show();
+
+        if(!(MapActivity.this).isFinishing())
+        {
+            alert.show();
+        }
+
+
+
+
 
         final Handler handler = new Handler();
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
                 if (alert.isShowing()) {
-                    alert.dismiss();
+                    alert.cancel();
                 }
             }
         };
